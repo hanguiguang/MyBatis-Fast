@@ -1,5 +1,6 @@
 # MyBatis-Fast
-MyBatis增强封装工具 类似MyBatis-Plus
+MyBatis增强封装工具 类似MyBatis-Plus  优点 动态SQL  不用XML 写代码
+目前只针对Mysql  语法
 
 
 ################ 用法测试
