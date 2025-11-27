@@ -3,8 +3,11 @@ MyBatis增强封装工具 类似MyBatis-Plus  优点 动态SQL  不用XML 写代
 1. 目前只针对Mysql  语法
 2. 没封装实体生成方法 需要借助 idea 的 数据库 的工具生成
    Generate POJOsMyLombok3.groovy 使用已经写好的模版 （将模版添加到 idea
-3. 把 mybatis-config.xml 文件放到 需要引入的工程里（也可以把这段xml 用代码形式代替 写到配置代码了 无xml化  具体参考***）
 
+   idea生成实体  路径
+   数据库--> 工具 -->脚本化扩展路径     （把我们的模版放到idea 指定目录再调用
+4. 把 mybatis-config.xml 文件放到 需要引入的工程里（也可以把这段xml 用代码形式代替 写到配置代码了 无xml化  具体参考***）
+    配置 mybatis.config-location=classpath:mybatis-config.xml
 
 
 ###############################
