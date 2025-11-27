@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commonMVC" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commonMVC/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commonMVC/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commonMVController" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commonMVController/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commonMVController/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatiesFast" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatiesFast/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatiesFast/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatisTool" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatisTool/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatisTool/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yy-common" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

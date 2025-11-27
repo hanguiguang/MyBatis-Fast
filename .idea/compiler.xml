@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mybatiesSpring" />
+        <module name="commonMVController" />
+        <module name="mybatisTool" />
+        <module name="common" />
+        <module name="commonMVC" />
+        <module name="mybatiesFast" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mybatis" target="1.8" />
+      <module name="ys-common-api" target="1.8" />
+      <module name="ys-eureka-server" target="1.8" />
+      <module name="ys-frontend-comsumer" target="1.8" />
+      <module name="ys-frontend-provider" target="1.8" />
+      <module name="ys-order" target="1.8" />
+      <module name="ys-order-pay-comsumer" target="1.8" />
+      <module name="ys-order-pay-provider" target="1.8" />
+      <module name="ys-pay" target="1.8" />
+      <module name="ys-spring-cloud-security" target="1.8" />
+      <module name="yy-common" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

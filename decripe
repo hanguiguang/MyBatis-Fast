@@ -1,0 +1,7 @@
+
+
+3.0.1 对应 mybatis-3.5.2
+使用程序如果报错 需要加上这句话在启动类上
+System.setProperty("javax.xml.parsers.DocumentBuilderFactory", "com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl");
+
+3.0.2 对应 mybatis-3.5.7

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:task="http://www.springframework.org/schema/task"
+    xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <!-- 引入属性文件 -->
+    <context:property-placeholder location="classpath:config/config.properties" ignore-unresolvable="true" />
+    <!-- 自动扫描(自动注入) -->
+    <context:component-scan base-package="com.ysyy.service"/>
+    <context:component-scan base-package="com.ysyy.dao"/>
+    <!-- 开启注解 -->
+    <context:annotation-config />
+
+    <!-- 一、使用数据库连接池注册数据源,引入相关的配置文件 -->
+    <!-- -->
+    <import resource="c3p0.xml"/>
+
+     <!-- 
+    <import resource="c3p0.xml"/>
+     -->
+    <!-- 二、创建mybatis会话工厂 -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+       <property name="dataSource" ref="dataSource"></property>
+      <property name="configLocation" value="classpath:config/mybatis-config.xml" />
+    </bean>
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+	  <property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="iSqlDyn" class="org.mybatis.spring.mapper.MapperFactoryBean">
+	  <property name="mapperInterface" value="com.ysyy.database.mysql.utils.dao.ISqlDyn" />
+	  <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+	</bean>
+	    <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+	    <constructor-arg index="0" ref="sqlSessionFactory"></constructor-arg>
+            <constructor-arg index="1" value="BATCH"/>
+    </bean>
+
+
+
+ <!--
+    <bean id="crud" class="org.mybatis.spring.mapper.MapperFactoryBean">
+	  <property name="mapperInterface" value="com.ysyy.database.mysql.utils.dao.Crud" />
+	  <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+	</bean>
+     
+    注册接口类的bean，使得程序中可以用注解方式获取
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">  
+     <property name="crud" value="com.ysyy.database.mysql.utils.dao" />  
+  </bean>   -->
+ <bean id="springContextUtil" class="com.SpringContextUtil"> </bean>
+</beans>
