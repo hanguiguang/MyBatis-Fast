@@ -7,7 +7,9 @@ MyBatis增强封装工具 类似MyBatis-Plus  优点 动态SQL  不用XML 写代
 
 
 
-################ 用法测试
+###############################
+// 用法测试
+
         // 测试V3.1.0 版本
        String sqlD3 = "select * from home_dictionary";
        // 默认查 未分页总数和 分页列表数据
@@ -16,7 +18,7 @@ MyBatis增强封装工具 类似MyBatis-Plus  优点 动态SQL  不用XML 写代
        // 指定 不查总数
        PageResult pageResult2 = crud.getListCustomerByPageWithTotal(home_dictionary.class, sqlD3,1,10,false,null);
        writeLog("=======测试V3.1 版本 普通格式 不查total=============="+pageResult2.getTotal());
-
+       
        // 复查的查询  如果 上面的格式 不能实现 自动识别 from 位置  导致  total 和分页查询失败
        PagePara pagePara=new PagePara();
        pagePara.setClazz(home_dictionary.class);
